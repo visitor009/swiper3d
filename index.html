@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+	<link rel="stylesheet" href="./css/3dSwiper.css">
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+
+		html,
+		body {
+			overflow: hidden;
+		}
+
+		ul {
+			list-style: none;
+		}
+	
+	</style>
+</head>
+
+<body>
+	<div class="swiper-container">
+		<ul class="swiper-wrap">
+			<li class="p1">
+				<img src="./images/3dSwiper/3dBanner1.png">
+			</li>
+			<li class="p2">
+				<img src="./images/3dSwiper/3dBanner2.png">
+			</li>
+			<li class="p3">
+				<img src="./images/3dSwiper/3dBanner3.png">
+			</li>
+			<li class="p4">
+				<img src="./images/3dSwiper/3dBanner4.png">
+			</li>
+			<li class="p5">
+				<img src="./images/3dSwiper/3dBanner5.png">
+			</li>
+			<li class="p6">
+				<img src="./images/3dSwiper/3dBanner6.png">
+			</li>
+		</ul>
+		<ul class="swiper-dots">
+		</ul>
+	</div>
+
+	<script src="./js/3dSwiper.js"></script>
+	<script>
+		new Swiper(".swiper-container",{
+			pagination: ".swiper-dots"
+		});
+	</script>
+
+	<body>
+
+</html>

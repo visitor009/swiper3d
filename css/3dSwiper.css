@@ -1,0 +1,96 @@
+.swiper-container {
+    width: 100%;
+    background: #fff;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.swiper-wrap {
+    width: 90%;
+    margin: 0 auto;
+    /* 父元素开启3d，才会有叠加效果 f*/
+    transform-style: preserve-3d;
+    /* 叠加过渡好看点 */
+    perspective: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-wrap li {
+    position: absolute;
+    left: 0;
+    height: auto;
+    box-shadow: 0 0 11px rgba(0, 0, 0, 0.5);
+    border-radius: 6%;
+    width: auto;
+}
+.swiper-wrap li:nth-child(1) {
+    position: relative;
+}
+.swiper-wrap.transition li {
+    transition: .5s;
+}
+
+.swiper-wrap img {
+    width: 100%;
+    display: block;
+}
+.p1 {
+    transform: translateZ(100px) scale(0.5);
+    /* transform: transalteZ(10px) 数值越大越上面*/
+}
+.p2 {
+    transform: translate3d(15%, 0, 90px) scale(0.4);	
+}
+.swiper-3 .p3,
+.swiper-6 .p6 {
+    transform: translate3d(-15%, 0, 90px) scale(.4);	
+}
+.swiper-6 .p3,
+.swiper-5 .p3 {
+    transform: translate3d(26%, 0, 80px) scale(.3);
+}
+
+.swiper-6 .p4,
+.swiper-4 .p3 {
+    transform: translate3d(0%, 0, 80px) scale(.3);
+}
+
+.swiper-6 .p5,
+.swiper-5 .p4 {
+    transform: translate3d(-26%, 0, 80px) scale(0.3);
+}
+
+.swiper-6 .p6,
+.swiper-4 .p4,
+.swiper-5 .p5 {
+    transform: translate3d(-15%, 0, 90px) scale(.4);
+}
+
+.swiper-dots {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 11%;
+    width: 180px;
+    display: flex;
+    justify-content: center;
+}
+
+.swiper-dots li {
+    width: 20px;
+    height: 2px;
+    background: #b5b5b5;
+    margin-right: 10px;
+    float: left;
+    transition: .3s;
+}
+
+.swiper-dots li:last-child {
+    margin: 0;
+}
+
+.swiper-dots .active {
+    background: #ff4949;
+}

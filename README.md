@@ -10,7 +10,6 @@ css js
 
 #### 使用说明
 
-![效果](https://images.gitee.com/uploads/images/2019/1203/152715_c4215e29_2137661.png)
 ## 介绍
 支持pc、移动端
 pc左右箭头控制

@@ -51,6 +51,7 @@ ie >= 10
 ```
 ## 注意事项：
 1. 图片数量要 3+
+2. 图片顺序从中间开始，往右排序
 3. 图片尺寸会比原来的缩小0.6倍，原来是180px,页面上会变成 `180 * 0.6 = 108px`
 
 [在线预览地址](http://visitor009.gitee.io/specialaffect/html/%E6%97%8B%E8%BD%AC%E6%9C%A8%E9%A9%AC%E8%BD%AE%E6%92%AD%E5%9B%BE.html)
